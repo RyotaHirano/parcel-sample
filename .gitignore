@@ -52,3 +52,4 @@ build
 
 /src/js/setting.js
 /public/
+.cache/*
