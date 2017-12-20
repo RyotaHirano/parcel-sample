@@ -137,7 +137,25 @@ module.exports = reloadCSS;
 },{"_css_loader":4}],2:[function(require,module,exports) {
 "use strict";
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 require("./../css/style.scss");
+
+var foo = 'foo';
+var bar = 'bar';
+console.log("log: " + foo + bar);
+
+var obj = {
+  'a': 'aaa',
+  'b': 'bbb'
+};
+
+var _obj = _extends({}, obj, {
+  'a': 'AAA',
+  'c': 'CCC'
+});
+console.log(obj);
+console.log(_obj);
 },{"./../css/style.scss":3}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -156,7 +174,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent) {
-  var ws = new WebSocket('ws://localhost:57033/');
+  var ws = new WebSocket('ws://localhost:63916/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
