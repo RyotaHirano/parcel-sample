@@ -1,0 +1,19 @@
+html, body {
+  margin: 0; }
+
+h1 {
+  color: #333;
+  font-size: 2rem; }
+
+p {
+  color: #7f7f7f;
+  font-size: 1rem; }
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 20px; }
